@@ -107,7 +107,7 @@ One World
           
           
             <div className="fadeMe">     <img className="relative" src="https://live.staticflickr.com/3712/14294653894_62fc3498b7_b.jpg"></img></div>
-           {!state&&<div className="fadeMeIn">     <img className="relative" src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5fe74d45a9c2a2d204db2948%2F0x0.jpg"></img></div>}
+           {!state&&<div className="fadeMeIn">     <img className="relative dRelative" src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5fe74d45a9c2a2d204db2948%2F0x0.jpg"></img></div>}
             
         </div>
         {state&&<div className="middle">

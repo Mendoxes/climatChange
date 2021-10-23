@@ -337,6 +337,12 @@ font-size:1.5rem;}
   margin-left: 2rem
 ;
 }
+
+.dRelative{
+
+  margin-left: 0rem !important
+;
+}
 }
 
 
