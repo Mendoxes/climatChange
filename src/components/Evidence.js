@@ -28,7 +28,8 @@ export default function Evidence() {
 
 
             </div></Fade>
-            <img className="melt" src={melt}></img>
+
+          <div className="melt">  <img  src={melt}></img></div>
             <div className="text"> Scientific evidence for warming of the climate system is unequivocal.</div>
             <Fade delay={400}><img src={change}></img></Fade>
             ok
