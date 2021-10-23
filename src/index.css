@@ -312,8 +312,9 @@ font-size: larger;
  }
  .middle{
   
-    top:29%;
-    left:20%;
+    top:34%;
+    left: 50%;
+    margin-left: -7rem;
    }
  .common{
   margin-bottom: 1rem;
@@ -324,4 +325,56 @@ font-size: larger;
 font-size:1.5rem;}
 .ok{margin-bottom:1rem}
 
+
+.stoper {
+
+  height: 58vh;
+
+}
+
+.relative{
+
+  margin-left: 2rem
+;
+}
+}
+
+
+@media screen and (min-width: 2000px) {
+  .info{
+   height: 7rem;
+
+  }
+  .stoper {
+
+    height: unset;
+  
+  }
+
+  .relative{
+    margin-left: -5rem
+    ;
+
+  }
+
+  .middle{
+    font-size: 6rem;
+  }
+
+.ok{font-size: 6rem !important ;}
+
+
+.smaller1{
+  font-size: 2rem;
+}
+.smaller2{
+  font-size: 2rem;
+}
+.smaller3{
+  font-size: 1rem;
+}
+
+.fonts{
+  font-size: 5rem;
+}
 }
