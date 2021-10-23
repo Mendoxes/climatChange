@@ -83,7 +83,7 @@ width:100%;
   font-weight: bold;
   /* font-size: xx-large; */
   letter-spacing: 0.5rem;
-  transition: all 1s;
+  /* transition: all 1s; */
   left:3rem;
 }
 
@@ -161,7 +161,7 @@ justify-content: start;
 
     .smallerIMG2{
       color:white;
-      width:77%;
+      width:100%;
      
       
       }
@@ -184,7 +184,7 @@ justify-content: start;
 .scroling2{
   display:flex;
   justify-content: space-between;
-  transition: all 2s;
+  /* transition: all 2s; */
 }
 
 .common{
@@ -196,7 +196,7 @@ justify-content: start;
 
   border-radius: 5px;
   /* box-shadow: 12px 10px 10px #888888; */
-  transition: all 2s;
+  /* transition: all 2s; */
 }
 
 
