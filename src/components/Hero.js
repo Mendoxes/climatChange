@@ -93,7 +93,7 @@ One World
       };
 
       if (!state){
-        setTimeout(function(){  document.querySelector(".App-header").scrollIntoView({ block: "end",behavior: 'smooth' }) }, 6000);
+        setTimeout(function(){  document.querySelector(".text-on-image").scrollIntoView({ block: "end",behavior: 'smooth' }) }, 6000);
        
       }
     
