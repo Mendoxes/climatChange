@@ -13,6 +13,12 @@ import hot from "../hot.png"
 import tsunami from "../tsunami.png"
 import arctic from "../arctic.png"
 import hope from "../hope.jpg"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 export default function Hero() {
 
@@ -161,17 +167,17 @@ One World
      
       
        
-      {fade1&& <div className="common third"> <Fade delay={99}><h1 onMouseEnter ={()=>setFade1(false)} className="fonts"> Evidence</h1></Fade>
+      {fade1&& <div className="common third"> <Fade delay={99}><h1 onMouseEnter ={()=>setFade1(false)} className="fonts"><Link to="/evidence"> Evidence</Link></h1></Fade>
         
        
         
         </div>}
         
-        {!fade1&&<div className="common third2"><Fade ><h1  onMouseLeave={()=>setFade1(true)} className="fonts2"> How do we know climate change is real?</h1></Fade></div>}
+        {!fade1&&<div className="common third2"><Fade ><h1  onMouseLeave={()=>setFade1(true)} className="fonts2"> <Link to="/evidence"> How do we know climate change is real?</Link></h1></Fade></div>}
         
-        {fade2&&<div  className="common first" onMouseEnter ={()=>setFade2(false)}><Fade delay={129}><h1  className="fonts"> How?</h1></Fade></div>}
+        {fade2&&<div  className="common first" onMouseEnter ={()=>setFade2(false)}><Fade delay={129}><h1  className="fonts"> <Link to="/evidence">How?</Link></h1></Fade></div>}
 
-        {!fade2&&<div  className="common first2" onMouseLeave={()=>setFade2(true)} ><Fade delay={99}><h1  className="fonts2">What can be done to solve climate change?</h1></Fade></div>}
+        {!fade2&&<div  className="common first2" onMouseLeave={()=>setFade2(true)} ><Fade delay={99}><h1  className="fonts2"><Link to="/evidence">What can be done to solve climate change?</Link></h1></Fade></div>}
         <div className="common second"><Fade delay={999}><h1 className="fonts"> What if?</h1></Fade></div>
         </div>
 

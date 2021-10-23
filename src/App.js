@@ -2,7 +2,7 @@
 import './App.css';
 import Hero from "./components/Hero"
 import Evidence from "./components/Evidence"
-
+import ScrollToTop from './components/ScrollToTop';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +20,7 @@ function App() {
  </Route>
 
  <Route path="/evidence">
+ <ScrollToTop />
    <Evidence></Evidence>
     </Route>
  </Router>
