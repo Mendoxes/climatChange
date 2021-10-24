@@ -65,6 +65,12 @@ flex-grow: 1;
 
 }
 
+.dropdown-toggle{
+    background-color: #00000000!important;
+    text-align: center;
+    border:none;
+}
+
 .textOnP{
     position: absolute;
     top: 150px
@@ -108,5 +114,21 @@ flex-grow: 1;
 ;
     margin: 1rem
 ;
+
+}
+
+.drop{
+  
+    background-color: #000000a8!important;
+}
+@media screen and (max-width: 650px) {
+.main2{
+    overflow: visible;
+    width: 60%;
+    background-color: #000000a8;
+    align-items: center;
+}
+
+.commonz{background-color: transparent;}
 
 }

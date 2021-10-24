@@ -13,6 +13,9 @@ import {
   } from "react-router-dom";
   import Numbers from "./numbers"
   import couse from "../couses.jpg"
+  import { useMediaQuery } from 'react-responsive'
+  import DropdownButton from 'react-bootstrap/DropdownButton'
+  import Dropdown from 'react-bootstrap/Dropdown'
 
 
 
@@ -20,6 +23,8 @@ export default function Evidence() {
     const [state, setState]=useState(true);
     const [evidence,setEvidence] = useState(true)
     const [couses, setCouses]=useState(false)
+
+    const isSmallScreen = useMediaQuery({ query: '(max-width: 650px)' })
 
 let k = [];
     function ok () {
@@ -44,7 +49,7 @@ function evidenceF(){
     return (
         <div>
             <div className="duo">
-            <Fade delay={600}> <div className="main2">
+           {!isSmallScreen&&<Fade delay={600}> <div className="main2">
 <div className="commonz uno">
     <Fade delay={900}>
        <Link to="/"> <img  className="green" src={ecosystem}>
@@ -62,7 +67,43 @@ function evidenceF(){
 <Numbers></Numbers> */}
 
 
-            </div></Fade></div>
+            </div></Fade>}
+            {isSmallScreen&&<Fade delay={600}> <div className="main2">
+<div className="commonz uno">
+    <Fade delay={900}>
+       <Link to="/"> <img  className="green" src={ecosystem}>
+            </img></Link> <span className="textLogo">Climate change</span>
+            </Fade></div>
+
+
+
+<DropdownButton variant="dark" id="dropdown-basic-button" title="Menu">
+{evidence&&<Dropdown.Item style={{color:"green"}} onClick={evidenceF}>Evidence</Dropdown.Item>}
+{!evidence&&<Dropdown.Item style={{color:"blue"}} onClick={evidenceF}>Evidence</Dropdown.Item>}
+{couses&&<Dropdown.Item style={{color:"green"}} onClick={cousesF}>Couses</Dropdown.Item>}
+{!couses&&<Dropdown.Item style={{color:"blue"}} onClick={cousesF}>Couses</Dropdown.Item>}
+  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+</DropdownButton>
+
+
+{/* 
+{evidence&&<div style={{color:"green"}} className="commonz dos" onClick={evidenceF}>EVIDENCE</div>}
+{!evidence&&<div className="commonz dos"onClick={evidenceF}>EVIDENCE</div>}
+
+{couses&&<div style={{color:"green"}} onClick={cousesF} className="commonz tres">COUSES</div>}
+{!couses&&<div onClick={cousesF} className="commonz tres">COUSES</div>}
+<div  className="commonz quatro">EFFECTS</div>
+<div className="commonz chinque">CONSESNSUS</div> */}
+
+{/* <div>{k}</div>
+<Numbers></Numbers> */}
+
+
+            </div></Fade>}
+            
+            
+            </div>
 
             {evidence&& <div className="melt">  <img className="wid"  src={melt}></img></div>}
          {evidence&&<div> <Numbers></Numbers>
