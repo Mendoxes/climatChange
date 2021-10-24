@@ -12,6 +12,22 @@ code {
     monospace;
 }
 
+.half{width: 50%;
+background-color: black;
+  }
+
+.half2{width: 50%;
+
+  font-size: 1.2rem;
+  width: 50%;
+  /* background-image: linear-gradient(to right, #2c2c2c , white); */
+  background-color: white;
+  text-align: center;
+  padding: 4rem;
+  color: black;
+  
+;
+}
 
 .fadeMe{
 
@@ -23,6 +39,20 @@ top:0;
 width:100%;
 }
 
+.slider-parent{
+  position:relative;
+}
+
+.buble{
+  position:absolute;
+  color:white;
+}
+
+.butHolder{
+  display:flex;
+  justify-content: space-between;
+  padding:0.5rem;
+}
 
 .fadeMeIn{
 
@@ -36,8 +66,24 @@ width:100%;
   animation-fill-mode: forwards;
   }
 
+  .widi{width:100%;}
   
+.numbers{
+  width: 100%;
+  overflow: hidden;
+  display:flex
+  
+}
 
+.imageE{
+  width: 100%;
+}
+
+.year{
+ 
+  background-color: black;
+  color:white;
+}
 
 .stoper{
   width:100%;
@@ -247,6 +293,14 @@ box-shadow: 12px 10px 10px #888888;
   
 }
 
+.brline{
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+}
+
 .fonts{
 
   font-family: 'IBM Plex Serif', serif;
@@ -279,6 +333,17 @@ font-size: larger;
     height: 47vh;
     overflow: hidden;
     background-color: black;
+  }
+
+  .half{
+    width:100%
+  }
+  .half2{
+    width:100%
+  }
+  .numbers{
+    flex-direction: column;
+    width: 100%;
   }
 }
 

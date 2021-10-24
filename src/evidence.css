@@ -31,7 +31,7 @@
 .wid{width: 100%;}
 
 .melt{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     overflow: hidden;
     /* position: relative; */
@@ -63,6 +63,20 @@ flex-grow: 1;
    
     /* width:90%; */
 
+}
+
+.textOnP{
+    position: absolute;
+    top: 150px
+;
+    left: 8%;
+    padding: 6rem
+;
+    width: 31rem
+;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-radius: 2rem;
 }
 
 .dos,.tres,.quatro,.chinque{
