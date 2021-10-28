@@ -2,7 +2,10 @@ import React from 'react'
 import change from "../change.jpg"
 import ecosystem from "../ecosystem1.png"
 import melt from "../melt.jpg"
+import ccc from "../emission.jpg"
 import Fade from 'react-reveal/Fade';
+import small from "../small.jpg"
+import small2 from "../small2.jpg"
 import '../evidence.css';
 import {useState, useCallback,useEffect} from "react"
 import {
@@ -470,11 +473,13 @@ let k = [];
 function cousesF(){
     setEvidence(false)
     setCouses(true)
+    setEffects(false)
 }
 
 function evidenceF(){
     setEvidence(true)
     setCouses(false)
+    setEffects(false)
 }
 
 function effectsF(){
@@ -627,7 +632,7 @@ function advice (){
            {!isSmallScreen&&<Fade delay={600}> <div className="main2">
 <div className="commonz uno">
     <Fade delay={900}>
-       <Link to="/"> <img  className="green" src={ecosystem}>
+       <Link to="/"> <img  className="greenA" src={ecosystem}>
             </img></Link> <span className="textLogo">Climate change</span>
             </Fade></div>
 {evidence&&<div style={{color:"green"}} className="commonz dos" onClick={evidenceF}>EVIDENCE</div>}
@@ -787,6 +792,42 @@ function advice (){
                 
                 }
                 
+
+
+                {effects&&<div> <img src={ccc}></img>
+                
+                
+                <div>
+
+<p className="paragraph">Global climate change has already had observable effects on the environment. Glaciers have shrunk, ice on rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering sooner.
+
+Effects that scientists had predicted in the past would result from global climate change are now occurring: loss of sea ice, accelerated sea level rise and longer, more intense heat waves.</p>
+
+
+
+<img style={{width:545, marginRight:30}}src={small}></img>
+<img style={{width:560}}src={small2}></img>
+<p className="paragraph">Scientists have high confidence that global temperatures will continue to rise for decades to come, largely due to greenhouse gases produced by human activities. The Intergovernmental Panel on Climate Change (IPCC), which includes more than 1,300 scientists from the United States and other countries, forecasts a temperature rise of 2.5 to 10 degrees Fahrenheit over the next century.
+
+According to the IPCC, the extent of climate change effects on individual regions will vary over time and with the ability of different societal and environmental systems to mitigate or adapt to change.
+
+The IPCC predicts that increases in global mean temperature of less than 1.8 to 5.4 degrees Fahrenheit (1 to 3 degrees Celsius) above 1990 levels will produce beneficial impacts in some regions and harmful ones in others. Net annual costs will increase over time as global temperatures increase.
+
+"Taken as a whole," the IPCC states, "the range of published evidence indicates that the net damage costs of climate change are likely to be significant and to increase over time."</p>
+
+
+
+<p className="paragraphB">Taken as a whole, the range of published evidence indicates that the net damage costs of climate change are likely to be significant and to increase over time.</p>
+
+                </div>
+                
+                
+                </div>
+                
+                
+                
+                
+                }
              
             
 

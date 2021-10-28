@@ -43,9 +43,15 @@ width:100%;
   position:relative;
 }
 
+
+
 .buble{
   position:absolute;
   color:white;
+}
+
+pre{
+  color:white!important;
 }
 
 .butHolder{
@@ -115,10 +121,7 @@ width:100%;
 }
 
 
-.type-writer{
 
-  
-}
 
 .middle{
   color: white;
@@ -157,7 +160,7 @@ width:100%;
 .scroling{
 
   /* height: 120vh; */
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
  
 
   padding:3rem;
@@ -254,6 +257,11 @@ box-shadow: 12px 10px 10px #888888;
 }
 
 
+.green2{
+  color:green;
+}
+
+
 
 .first2{
 
@@ -263,6 +271,22 @@ box-shadow: 12px 10px 10px #888888;
   background-color: #15b830;
   transition: all 2s;
   
+}
+
+
+.second2{
+
+  border:solid 1px black;
+  color:white;
+  cursor:pointer; 
+  background-color: #6b2327;
+  transition: all 2s;
+  
+}
+
+
+.darkred{
+  color:darkred !important;
 }
 
 .second{
@@ -279,7 +303,7 @@ box-shadow: 12px 10px 10px #888888;
   color:darkblue;
   cursor:pointer; 
   box-shadow: 12px 10px 10px #888888;
-  transition: all 2s;
+  /* transition: all 1s; */
   
 }
 
@@ -312,18 +336,19 @@ box-shadow: 12px 10px 10px #888888;
 
 }
 
+.whiteS{color:white !important;}
 
 .fonts2{
 
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'IBM Plex Serif', serif !important;
   
-  font-weight: bolder;
+  font-weight: bolder !important;
 
-  font-style: oblique;
-  font-variant: small-caps;
-font-size: larger;
+  font-style: oblique !important;
+  font-variant: small-caps !important;
+font-size: larger !important;
 
-    color: white;
+    color: white !important;
 }
 
 
@@ -373,7 +398,7 @@ font-size: larger;
  }
  .fonts{
  
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
  }
  .middle{
   
@@ -387,7 +412,8 @@ font-size: larger;
  }
 
 .type-writer{margin-bottom: 0;
-font-size:1.5rem;}
+font-size:1.5rem;
+color:white}
 .ok{margin-bottom:1rem}
 
 

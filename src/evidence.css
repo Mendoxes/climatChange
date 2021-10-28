@@ -121,11 +121,26 @@ flex-grow: 1;
         font-size: 2rem;
 }
 
+
+.paragraphB{
+    padding: 2rem
+    ;
+        margin-left: 3rem
+    ;
+        margin-right: 4rem
+    ;
+        font-size: 1.5rem;
+
+        border:2px solid black;
+
+        color:rgba(39, 39, 151, 0.699);
+}
+
 .dos:hover,.tres:hover,.quatro:hover,.chinque:hover{
     color:cornflowerblue;
 }
 
-.green{
+.greenA{
     /* background-color: green; */
    height: 3rem
 ;
