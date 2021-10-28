@@ -65,6 +65,23 @@ flex-grow: 1;
 
 }
 
+
+.cousesText{
+
+    text-align: center;
+    padding:4rem;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cousesParagraph{
+    margin-bottom: 2rem;
+}
+
+.states{
+  
+}
+
 .dropdown-toggle{
     background-color: #00000000!important;
     text-align: center;
